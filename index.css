@@ -1,0 +1,17 @@
+#magi {
+	margin: auto;
+	display: block;
+	width: 632px;
+	margin-top: 25vh;
+	display: none;
+}
+
+#message1 {
+	display: none;
+	text-align: center;
+}
+
+#message2 {
+	display: none;
+	text-align: center;
+}
