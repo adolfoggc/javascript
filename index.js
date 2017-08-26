@@ -3,41 +3,18 @@
 		alert(userName+", I choose you!!!");
 		document.getElementById("message1").style.display = "block";
 		document.getElementById("magi").style.display = "block";
-
-		
 	}
 	
 	function splash(){
 		document.getElementById("message1").style.display="none";
-/*
-		var x = 0;
-
-		time = setInterval(checkSplash,300);
-		
-		if(time == 300){
-			x++;
-		}
-
-		if(x==4){
-			clearInterval(time);
-		}
-*/
-splash1();
-
-			
-	}
-
-	function splash1(){
 		document.getElementById("message2").style.display="none";
-		document.getElementById("magi").style.marginTop = "10vh";
-		setTimeout(splash2,200);
-		setTimeout(showMessage,400);
-	}
-
-	function splash2(){
-		document.getElementById("magi").style.marginTop = "25vh";
-
-				
+		checkSplash(); 
+		setTimeout(checkSplash,100); 
+		setTimeout(checkSplash,200); 
+		setTimeout(checkSplash,300); 
+		setTimeout(checkSplash,400); 
+		setTimeout(checkSplash,500); 
+		setTimeout(showMessage,550);	
 	}
 
 	function showMessage(){
@@ -45,10 +22,10 @@ splash1();
 	}
 
 	function checkSplash(){
-		if(document.getElementById("magi").style.marginTop == "25vh"){
-			document.getElementById("magi").style.marginTop = "10vh";
-		} else {
+		if(document.getElementById("magi").style.marginTop == "10vh"){
 			document.getElementById("magi").style.marginTop = "25vh";
+		} else {
+			document.getElementById("magi").style.marginTop = "10vh";
 		}
 
 	}
